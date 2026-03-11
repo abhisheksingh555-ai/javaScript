@@ -1,57 +1,39 @@
-"use strict"
 // ==================================
-// Do While Loop in JavaScript
-// ==================================
-
-// A do-while loop is similar to a while loop
-// but it **executes the code block at least once**
-// before checking the condition.
-
-
-// Syntax
-
-// do {
-//     // code to execute
-// } while(condition);
-
-
-// ==================================
-// Example
+// break Keyword
 // ==================================
 
-let i = 1;
+// break is used to stop the loop immediately
 
-do {
+for(let i = 1; i <= 10; i++){
+    if(i === 5){
+        break;
+    }
     console.log(i);
-    i++;
-} while(i <= 5);
+}
 
 // Output
 // 1
 // 2
 // 3
 // 4
+
+
+// ==================================
+// continue Keyword
+// ==================================
+
+// continue skips the current iteration
+// and moves to the next iteration
+
+for(let i = 1; i <= 5; i++){
+    if(i === 3){
+        continue;
+    }
+    console.log(i);
+}
+
+// Output
+// 1
+// 2
+// 4
 // 5
-
-
-// ==================================
-// Difference Between While and Do-While
-// ==================================
-
-// While Loop → condition is checked **before** executing the code
-// Do-While Loop → code runs **once before** checking condition
-
-
-// ==================================
-// Another Example
-// ==================================
-
-let num = 10;
-
-do {
-    console.log("Hello");
-    num++;
-} while(num < 10);
-
-// Output → "Hello"
-// Even though num < 10 is false initially, code runs once

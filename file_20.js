@@ -1,52 +1,57 @@
 "use strict"
 // ==================================
-// Introduction to Arrays in JavaScript
+// Do While Loop in JavaScript
 // ==================================
 
-// Arrays are a type of **reference data type**.
-// They store an **ordered collection of items**.
+// A do-while loop is similar to a while loop
+// but it **executes the code block at least once**
+// before checking the condition.
 
 
-// ==================================
-// How to Create an Array
-// ==================================
+// Syntax
 
-// Using array literal
-let arr = [1, 2, 3, 4];
-
-// Using Array constructor
-let arr2 = new Array(5, 6, 7);
+// do {
+//     // code to execute
+// } while(condition);
 
 
 // ==================================
-// Accessing & Updating Array Elements
-// ==================================
-
-console.log(arr[0]);  // 1 → first element
-arr[1] = 20;           // updating second element
-console.log(arr[1]);   // 20
-
-
-// ==================================
-// Difference Between Array & Object
-// ==================================
-
-let obj = {};  // object literal
-
-console.log(arr);              // [1, 20, 3, 4]
-console.log(typeof arr);       // object
-console.log(Array.isArray(arr)); // true
-console.log(Array.isArray(obj)); // false
-
-
-// ==================================
-// Array Indexing
-// ==================================
-
-// Array elements are indexed starting from 0
-
 // Example
-// arr = [1, 20, 3, 4]
-// Index:  0   1   2  3
+// ==================================
 
-console.log(arr[2]); // 3 → third element
+let i = 1;
+
+do {
+    console.log(i);
+    i++;
+} while(i <= 5);
+
+// Output
+// 1
+// 2
+// 3
+// 4
+// 5
+
+
+// ==================================
+// Difference Between While and Do-While
+// ==================================
+
+// While Loop → condition is checked **before** executing the code
+// Do-While Loop → code runs **once before** checking condition
+
+
+// ==================================
+// Another Example
+// ==================================
+
+let num = 10;
+
+do {
+    console.log("Hello");
+    num++;
+} while(num < 10);
+
+// Output → "Hello"
+// Even though num < 10 is false initially, code runs once
