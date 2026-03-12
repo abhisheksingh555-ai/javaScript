@@ -1,4 +1,3 @@
-"use strict"
 // ==================================
 // Introduction to Arrays in JavaScript
 // ==================================
